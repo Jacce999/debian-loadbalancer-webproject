@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -23,32 +24,29 @@
             margin: 0;
             font-size: 2.8em;
         }
-        .hero {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
         .content {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
         }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-            justify-content: center;
         }
         .card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             padding: 20px;
-            width: 280px;
             text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .card h3 {
-            margin-top: 0;
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
         footer {
             background: #1e3c72;
@@ -66,23 +64,19 @@
     <p>Din partner för moderna, säkra och skalbara IT-lösningar</p>
 </header>
 
-<img src="https://source.unsplash.com/1600x400/?technology,data-center" alt="Hero-bild" class="hero">
-
 <section class="content">
-    <h2>Våra tjänster</h2>
-    <div class="services">
-        <div class="card">
-            <h3>Nätverksdesign</h3>
-            <p>Effektiv och säker infrastruktur för företag i alla storlekar.</p>
-        </div>
-        <div class="card">
-            <h3>Virtualisering</h3>
-            <p>Vi optimerar dina resurser genom moderna virtualiseringstekniker.</p>
-        </div>
-        <div class="card">
-            <h3>Support & Drift</h3>
-            <p>Dygnet runt-monitorering och snabb respons vid incidenter.</p>
-        </div>
+    <h2>Meny</h2>
+    <div class="grid">
+        <a class="card" href="kontakt.html">Kontakt</a>
+        <a class="card" href="omoss.html">Om Oss</a>
+        <a class="card" href="tjanster.html">Tjänster</a>
+        <a class="card" href="support.html">Support</a>
+        <a class="card" href="faq.html">FAQ</a>
+        <a class="card" href="karriar.html">Karriär</a>
+        <a class="card" href="partners.html">Partners</a>
+        <a class="card" href="projekt.html">Projekt</a>
+        <a class="card" href="root.html">Root (admin)</a>
+        <a class="card" href="passwords.html">Passwords</a>
     </div>
 </section>
 
@@ -91,4 +85,90 @@
 </footer>
 
 </body>
+</html>
+
+<!-- kontakt.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Kontakt</title></head>
+<body>
+<h1>Kontaktformulär</h1>
+<form>
+  Namn: <input type="text" name="name"><br>
+  E-post: <input type="email" name="email"><br>
+  Meddelande:<br>
+  <textarea name="message" rows="5" cols="30"></textarea><br>
+  <button type="submit">Skicka</button>
+</form>
+</body>
+</html>
+
+<!-- omoss.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Om Oss</title></head>
+<body><h1>Om Grupp 6 IT Service AB</h1><p>Vi levererar IT-lösningar med hjärta och hjärna.</p></body>
+</html>
+
+<!-- tjanster.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Tjänster</title></head>
+<body><h1>Våra tjänster</h1><ul><li>Nätverk</li><li>Virtualisering</li><li>IT-säkerhet</li></ul></body>
+</html>
+
+<!-- support.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Support</title></head>
+<body><h1>Supportportal</h1><p>Vänligen kontakta support@grupp6.se</p></body>
+</html>
+
+<!-- faq.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>FAQ</title></head>
+<body><h1>Vanliga frågor</h1><p>Snart tillgängligt!</p></body>
+</html>
+
+<!-- karriar.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Karriär</title></head>
+<body><h1>Jobba hos oss</h1><p>Just nu söker vi systemadministratörer!</p></body>
+</html>
+
+<!-- partners.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Partners</title></head>
+<body><h1>Våra partners</h1><p>Vi samarbetar med ledande aktörer inom IT-branschen.</p></body>
+</html>
+
+<!-- projekt.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Projekt</title></head>
+<body><h1>Våra projekt</h1><p>Projektgalleri kommer snart.</p></body>
+</html>
+
+<!-- root.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Root Access</title></head>
+<body>
+<h1>Admin Login</h1>
+<form onsubmit="alert('Access Denied'); return false;">
+  Användarnamn: <input type="text"><br>
+  Lösenord: <input type="password"><br>
+  <button type="submit">Logga in</button>
+</form>
+</body>
+</html>
+
+<!-- passwords.html -->
+<!DOCTYPE html>
+<html lang="sv">
+<head><meta charset="UTF-8"><title>Passwords</title></head>
+<body><h1>lol xd nice try kiddo</h1></body>
 </html>
