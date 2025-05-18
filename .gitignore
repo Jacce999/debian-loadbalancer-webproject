@@ -1,0 +1,37 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Backup files
+*~
+
+# System folders
+__pycache__/
+*.pyc
+
+# Secret or config files (optional)
+*.env
+*.bak
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Virtual machines or ISOs (just in case)
+*.iso
+*.vdi
+*.vmdk
+*.ova
+
+# Node or Python cache (if you used APIs or scripts)
+node_modules/
+.env/
+dist/
+build/
