@@ -1,5 +1,94 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head><meta charset="UTF-8"><title>ProSales</title></head>
-<body><h1>ProSales Startsida</h1><a href="kontakt.html">Kontakta oss</a></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupp 6 IT Service AB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        .hero {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grupp 6 IT Service AB</h1>
+    <p>Din partner för moderna, säkra och skalbara IT-lösningar</p>
+</header>
+
+<img src="https://source.unsplash.com/1600x400/?technology,data-center" alt="Hero-bild" class="hero">
+
+<section class="content">
+    <h2>Våra tjänster</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Nätverksdesign</h3>
+            <p>Effektiv och säker infrastruktur för företag i alla storlekar.</p>
+        </div>
+        <div class="card">
+            <h3>Virtualisering</h3>
+            <p>Vi optimerar dina resurser genom moderna virtualiseringstekniker.</p>
+        </div>
+        <div class="card">
+            <h3>Support & Drift</h3>
+            <p>Dygnet runt-monitorering och snabb respons vid incidenter.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Grupp 6 IT Service AB - All rights reserved
+</footer>
+
+</body>
 </html>
