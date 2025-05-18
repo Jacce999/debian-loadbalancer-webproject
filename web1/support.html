@@ -1,3 +1,63 @@
-<!-- support.html -->
 <!DOCTYPE html>
-<html lang='sv'><head><meta charset='UTF-8'><title>Support</title></head><body><h1>Supportportal</h1></body></html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Support - Grupp 6 IT Service AB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f7fa;
+            margin: 0; padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .content {
+            background: white;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support</h1>
+    </header>
+    <div class="content">
+        
+        <h2>Supportförfrågan</h2>
+        <form>
+            <label>Namn:</label><input type="text" disabled><br><br>
+            <label>Ärende:</label><input type="text" readonly value="Inget stöd ges."><br><br>
+            <label>Kategori:</label>
+            <select disabled>
+                <option>Valfri</option>
+                <option>Ingen</option>
+                <option>Oklar</option>
+            </select><br><br>
+            <label>Beskrivning:</label>
+            <textarea rows="4" cols="50" placeholder="Här kommer du ändå inte få hjälp."></textarea><br><br>
+            <button disabled>Skicka</button>
+        </form>
+    
+    </div>
+    <footer>
+        &copy; 2025 Grupp 6 IT Service AB - All rights reserved
+    </footer>
+</body>
+</html>
