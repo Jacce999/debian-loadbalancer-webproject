@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>One Direction Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f0f2f5, #e0c3fc);
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #4b0082;
+    }
+    .quiz-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .options {
+      margin: 15px 0;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #4b0082;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6a0dad;
+    }
+    #result {
+      font-size: 1.4em;
+      color: green;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎤 One Direction Quiz</h1>
+
+<div class="quiz-container">
+  <div class="question" id="question">Laddar fråga...</div>
+  <div class="options" id="options"></div>
+  <button onclick="checkAnswer()">Svara</button>
+  <div id="result"></div>
+</div>
+
+<script>
+  const quizData = [
+    {
+      question: "Vilket år bildades One Direction?",
+      options: ["2009", "2010", "2011", "2012"],
+      answer: "2010"
+    },
+    {
+      question: "Vem lämnade bandet 2015?",
+      options: ["Harry", "Zayn", "Louis", "Liam"],
+      answer: "Zayn"
+    },
+    {
+      question: "Vilken låt innehåller raden: 'You're insecure, don't know what for'?",
+      options: ["Story of My Life", "Little Things", "What Makes You Beautiful", "Night Changes"],
+      answer: "What Makes You Beautiful"
+    },
+    {
+      question: "Vad heter debutalbumet?",
+      options: ["FOUR", "Take Me Home", "Up All Night", "Midnight Memories"],
+      answer: "Up All Night"
+    }
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function loadQuestion() {
+    const q = quizData[currentQuestion];
+    document.getElementById('question').innerText = q.question;
+    const optionsDiv = document.getElementById('options');
+    optionsDiv.innerHTML = "";
+
+    q.options.forEach(opt => {
+      optionsDiv.innerHTML += `
+        <label><input type="radio" name="option" value="${opt}"> ${opt}</label><br>
+      `;
+    });
+  }
+
+  function checkAnswer() {
+    const selected = document.querySelector('input[name="option"]:checked');
+    if (!selected) {
+      alert("Välj ett alternativ!");
+      return;
+    }
+
+    const answer = selected.value;
+    if (answer === quizData[currentQuestion].answer) {
+      score++;
+    }
+
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+      loadQuestion();
+    } else {
+      document.querySelector('.quiz-container').innerHTML = `
+        <h2>Du fick ${score} av ${quizData.length} rätt 🎉</h2>
+        <p> ${score === quizData.length ? "Du är ett äkta fan!" : "Bra jobbat ändå!"}</p>
+      `;
+    }
+  }
+
+  // Starta quizet
+  loadQuestion();
+</script>
+
+</body>
+</html>
