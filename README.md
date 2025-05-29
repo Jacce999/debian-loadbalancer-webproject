@@ -124,11 +124,9 @@ Skärmdump från testet finns inkluderad i repot.
 ## Bilder och design
 
 - Skärmdumpar finns av webbgränssnitt, terminal och inställningar i VMware.
-- Kompletteras med bild på nätverksskiss vid behov.
 
 ## Bilagor
 
-- Nätverksskiss (PNG/draw.io)
 - Terminalutskrifter från testning
 - Index.html från båda webservrarna
 
