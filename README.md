@@ -52,8 +52,6 @@ debian-loadbalancer-webproject/
 ├── web2/
 │   ├── index.html (rickrolls & quiz)
 │   ├── quiz.html
-├── shared-html/ (valfritt mount-läge)
-├── Deploying Web Project.sh
 ├── README.md
 ```
 
