@@ -135,7 +135,7 @@ Skärmdump från testet finns inkluderad i repot.
 Projektet har gett oss:
 - Praktisk förståelse för virtualisering, lastbalansering och webbutveckling
 - Erfarenhet av Git, bash-scripting och manuell driftsättning
-- Ett udda men välfungerande system redo för redovisning
+- Ett udda men välfungerande system
 
 
 
